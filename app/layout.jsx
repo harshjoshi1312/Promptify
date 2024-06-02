@@ -1,6 +1,9 @@
 import "@styles/globals.css";
 import { Children } from "react";
 
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
+
 export const metadata ={
     title:"promptify",
     description:"discover & share AI prompts"
@@ -16,6 +19,7 @@ const RootLayout = ({children}) => {
         </div>
 
         <main className="app">
+            <Nav />
         {children}
         </main>
     </body>
