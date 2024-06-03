@@ -1,6 +1,4 @@
 "use client";
-// for this page it has two works style the form component
-// functionality to push form by here
 
 import { useState } from "react";
 import { useSession } from "next-auth/react";
@@ -41,7 +39,7 @@ const CreatePrompt = () => {
 
   return (
     <Form
-      type="Create"
+      type='Create'
       post={post}
       setPost={setPost}
       submitting={submitting}
